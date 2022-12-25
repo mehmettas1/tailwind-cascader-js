@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>input button</title>
+    <link rel="stylesheet" href="/dist/output.css" />
+  </head>
+  <body>
+    <div class="cascader container mx-auto   mt-6 w-full ">
+        <div class="bg-gray-400 h-24 group">
+        <ul class="items flex gap-x-8 ">
+          <li class=" relative flex h-[90px] items-center">
+            <div class="my-auto px-4">
+                <div class="mb-3 container mx-a ">
+            
+                  <input type="text " placeholder="SEARCH" class="border-gray-mid-992 active:border-primary mt-[10px] h-8 w-[94rem] border-[1.5px] py-3 px-5 text-[10px] font-normal text-gray-mid-992 placeholder-gray-mid-992 outline-none transition focus:border-gray-mid-992 disabled:cursor-default disabled:bg-[#F5F7FD]" />
+                </div>
+                
+                
+                <button class="w-20  h-10 border-2 border-red  rounded-lg bg-red-500 text-white group ">kategori</button>
+              </div>
+              <div
+              class=" absolute top-[98px] text-center  w-full pb-5 invisibl group-hover:visible group-hover:opacity-100  "
+            >
+              <ul
+                class="bg-gray-400 relative flex w-[508px] flex-col gap-y-8 text-left  border-[#dee0ea] py-[18px] first-layer-ul" 
+              >
+               
+              </ul>
+              
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+
+    
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <script src="app.js"></script>
+   
+  </body>
+</html>
