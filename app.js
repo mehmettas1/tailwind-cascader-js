@@ -428,21 +428,21 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24
 
 linkData.forEach((element)=>{
 const li1=document.createElement("li");
-li1.setAttribute("class"," cursor-pointer first-layer-li pl-3 flex justify-between   ");
+li1.setAttribute("class"," cursor-pointer first-layer-li pl-8 text-black hover:text-primary flex justify-between  ");
 li1.innerHTML=element.linkAdi;
 li1.innerHTML +=svg;
 
 firstUl.appendChild(li1);
 
 const ul2 = document.createElement("ul");
-ul2.setAttribute("class","absolute hidden flex flex-col left-[508px] top-[0] ml-1  second-layer-ul ");
+ul2.setAttribute("class","absolute hidde flex flex-col left-[31.80rem] top-[0] ml-[1px]  second-layer-ul  ");
 li1.appendChild(ul2);
 
 
 
 element.altLinkler.forEach((el)=>{
 const li2=document.createElement("li");
-li2.setAttribute("class","bg-gray-400 cursor-pointer w-[508px] h-[57px] second-layer-li flex justify-between py-[18px]");
+li2.setAttribute("class","bg-white cursor-pointer w-[32rem] h-[57px] second-layer-li text-black hover:text-primary flex justify-between pl-7 py-[18px]");
 li2.innerHTML=el.acilirLink;
 li2.innerHTML +=svg;
 ul2.appendChild(li2);
@@ -450,12 +450,12 @@ ul2.appendChild(li2);
 
 // 3katman
 const ul3 = document.createElement("ul");
-ul3.setAttribute("class","absolute hidden  flex flex-col left-[510px]  top-0 ml-1 third-layer-ul");
+ul3.setAttribute("class","absolute hidde flex flex-col left-[32rem] top-0 ml-[2px]   third-layer-ul");
 li2.appendChild(ul3);
 
 el.enAltLinkler.forEach((ele)=>{
     const li3=document.createElement("li");
-    li3.setAttribute("class","bg-gray-400 cursor-pointer w-[510px] h-[57px] flex justify-between   third-layer-li py-[18px] pl-1");
+    li3.setAttribute("class","bg-white cursor-pointer w-[32rem] h-[57px] text-black hover:text-primary flex justify-between third-layer-li py-[18px] pl-6");
     li3.innerHTML=ele.enAltLinkAdi;
     li3.innerHTML +=svg;
     ul3.appendChild(li3);
@@ -474,15 +474,22 @@ const secondLi =document.querySelectorAll(".second-layer-li");
 const thirdUl =document.querySelectorAll(".third-layer-ul");
 const thirdLi =document.querySelectorAll(".third-layer-li");
 
+
+
+
+
 firstLi.forEach((element)=>{
     element.addEventListener('click',(item)=>{
       
       if (item.target.querySelector(".second-layer-ul")) {
         document.querySelectorAll(".second-layer-ul").forEach((el)=>{
-            el.style.display = 'none'
+            el.style.display = 'none';
+        
+           
         })
         document.querySelectorAll(".third-layer-ul").forEach((el)=>{
           el.style.display = 'none'
+         
       })
         
           
@@ -525,6 +532,7 @@ document.addEventListener('click',(event)=>{
 if (!event.target.closest(".first-layer-ul")) {
   console.log("meta");
   document.querySelectorAll(".second-layer-ul").forEach((el)=>{
+  
 el.style.display="none";
   })
 
@@ -533,3 +541,5 @@ el.style.display="none";
       })
 }
 })
+
+
