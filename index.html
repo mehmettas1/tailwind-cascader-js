@@ -7,42 +7,69 @@
     <title>input button</title>
     <link rel="stylesheet" href="/dist/output.css" />
   </head>
-  <body>
-    <div class="cascader container mx-auto   mt-6 w-full ">
-        <div class="bg-gray-400 h-24 group">
-        <ul class="items flex gap-x-8 ">
-          <li class=" relative flex h-[90px] items-center">
-            <div class="my-auto px-4">
-                <div class="mb-3 container mx-a ">
-            
-                  <input type="text " placeholder="SEARCH" class="border-gray-mid-992 active:border-primary mt-[10px] h-8 w-[94rem] border-[1.5px] py-3 px-5 text-[10px] font-normal text-gray-mid-992 placeholder-gray-mid-992 outline-none transition focus:border-gray-mid-992 disabled:cursor-default disabled:bg-[#F5F7FD]" />
-                </div>
+  <body class="bg-[#E5E5E5]">
+  <div class="flex justify-center items-center container mx-auto w-full">
+    <div class="cascader    mt-6    group">
+      <div class="bg-white h-24   w-[96rem]">
+      <ul class="items flex gap-x-8 ">
+        <li class=" relative flex h-[90px] items-center">
+          
+              <div class="mb-3 container mx-auto w-full h-full ">
+          
+                <input type="text " placeholder="SEARCH" class=" mt-7 active:border-primary  h-10 w-[94rem] py-3 px-5 text-sm font-normal text-slate-800 placeholder-slate-800 outline-none transition bg-[#ECEFF1] focus:border-gray-mid-992 disabled:cursor-default disabled:bg-[#F5F7FD]" />
+                <span class="w-20  h-8   flex justify-center items-center  bg-[#ECEFF1] text-black capitalize mt-[2px] group ">kategori</span>
                 
-                
-                <button class="w-20  h-10 border-2 border-red  rounded-lg bg-red-500 text-white group ">kategori</button>
               </div>
-              <div
-              class=" absolute top-[98px] text-center  w-full pb-5 invisibl group-hover:visible group-hover:opacity-100  "
-            >
-              <ul
-                class="bg-gray-400 relative flex w-[508px] flex-col gap-y-8 text-left  border-[#dee0ea] py-[18px] first-layer-ul" 
-              >
-               
-              </ul>
               
-            </div>
-          </li>
-        </ul>
-      </div>
+              
+           
+            <div
+            class=" absolute top-[98px] text-center   w-full pb-5 invisibl group-hover:visible group-hover:opacity-100  "
+          >
+            <ul
+              class="bg-white relative flex w-[31.75rem] flex-col gap-y-8 text-left  border-[#dee0ea] py-[18px] first-layer-ul" 
+            >
+             
+            </ul>
+            
+          </div>
+        </li>
+      </ul>
     </div>
-
-
-
+    <div
+    class=" shadow-card   w-[96rem] absolute hidden group-hover:mt-[286px]  bg-[#ECEFF1] text-black  py-4 px-4 sm:px-6 md:px-8 md:py-5"
+  >
+    <ul class="flex items-center">
+      <li class="flex items-center">
+        <a
+          href="javascript:void(0)"
+          class="hover:text-primary text-base font-semibold text-[#78909C]"
+        >
+          Home
+        </a>
+        <span class="text-[#78909C] px-3"> / </span>
+      </li>
+      <li class="flex items-center">
+        <a
+          href="javascript:void(0)"
+          class="text-[#78909C] hover:text-primary text-base font-semibold"
+        >
+          Project
+        </a>
+        <span class="text-[#78909C] px-3"> / </span>
+      </li>
+      <li class="text-base font-semibold text-[#78909C]">Marketing</li>
+    </ul>
+  </div>
+  </div>
     
-    <script
-      defer
-      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
-    ></script>
+  </div>
+ 
+ 
+
+
+
+
     <script src="app.js"></script>
    
   </body>
